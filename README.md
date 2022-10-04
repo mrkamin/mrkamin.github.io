@@ -16,7 +16,7 @@
 
 
 
-## Live Demo (if available)
+## Live Demo 
 
 - Gain access to this awesom project by :
 - heading over to "https://github.com/mrkamin/mrkamin.github.io" to view the Github repo.
