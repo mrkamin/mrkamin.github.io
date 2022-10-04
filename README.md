@@ -16,10 +16,18 @@
 
 
 
-## Live Demo
+## Live Demo (if available)
 
+- Gain access to this awesom project by :
+- heading over to "https://github.com/mrkamin/mrkamin.github.io" to view the Github repo.
+- Forking it to your Github account (You can as well "clone" it to your local machine )
+And there you have it all running in your local machine 😎
 
-[Portfolio](https://github.com/mrkamin/mrkamin.github.io)
+### Links
+
+- Solution URL: [https://github.com/mrkamin/mrkamin.github.io]
+- Live Site URL: [https://mrkamin.github.io/]
+
 
 
 ## Getting Started
