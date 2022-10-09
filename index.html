@@ -4,210 +4,572 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>MRKA-Portfolio</MRKA-Portfolio></title>
+    <!-- CSS only -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <title>Portofolio-Desktop-Version</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
-      <header class="nav-bac backgroun-color">
-        <h1><a href="#" class="my-logo">MRKA</a></h1>
-        <nav class="nav-bar">
-          <ul class="menu">
-            <li><a href="#parent-cards">Portofolio</a></li>
-            <li><a href="#about-content">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!--Nav Bar-->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MRK Amin.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
-        </nav>
-      </header>
-      <main>
-        <article id="page-header">
-          <section class="page-header-container">
-            <h2>I'm Mohammad Rafi Amin <br>Glad to see you!</h2>
-            <p>
-              I’m a software developer! I can help you build a product , feature or website Look through<br>some of my work and experience! If you like what you see and have a project you need<br>coded, don’t hestiate to contact me.
-            </p>
-            <h4 class="text-social">LETS's CONNECT</h4>
-            <ul class="contacts-social">
-              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
-            </ul>
-          </section>
-        </article>
-        <article id="parent-cards">
-          <section class="card">
-            <div class="block-image"><img src="/image/card-1.png" alt="Missed Image" class="image-card reverse">
-            </div>
-            <div class="block-card">
-              <h2 class="header-card">Tonic</h2>
-              <div class="title-card-container">
-                <ul class="title-card">
-                  <li class="exclude-list">CANOPY</li>
-                  <li>BACK END DEV</li>
-                  <li>2022</li>
-                </ul>
-              </div>
-              <p class="text-card" >
-                A daily selection of privately personalized reads; no accounts<br>or sign-ups required.
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="social-icon" href="#"
+                ><i class="ri-dribbble-line"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="social-icon" href="#"><i class="ri-github-line"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="social-icon" href="#"
+                ><i class="ri-instagram-line"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="social-icon" href="#"
+                ><i class="ri-facebook-line"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="social-icon" href="#"
+                ><i class="ri-youtube-line"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="social-icon" href="#"
+                ><i class="ri-twitter-line"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Home -->
+    <section id="home" class="d-flex align-items-center min-vh-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="display-1 fw-bold">Hi there! I'm</h1>
+            <h1 class="display-5 fw-bold">
+              <span class="text-brand">Mohamamd Rafi Amin.</span>
+            </h1>
+            <h4 class="mt-3 mb-5">Mars based web designer and developer</h4>
+            <a href="#" class="btn btn-brand">Get Connected</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section-padding section-connector">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h1>Services</h1>
+              <p>
+                I’m a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
               </p>
-              <div class="skills-card-container">
-                <ul class="skills-card">
-                  <li class="skills1">html</li>
-                  <li class="skills2">css</li>
-                  <li class="skills3">javaScript</li>
-                </ul>
+              <div class="line"></div>
             </div>
-              <button class="button-see" type="button">See Projects</button>
-            </div>
-          </section>
-          <section class="card">
-            <div class="image-block"><img src="image/card-2.png" alt="Missed Image" class="image-card"></div>
-            <div class="block-card reverse">
-              <h2 class="header-card">Multi-Post Stories</h2>
-              <div class="title-card-container">
-                <ul class="title-card">
-                  <li class="exclude-list">FACEBOOK</li>
-                  <li>Full Stack Dev</li>
-                  <li>2022</li>
-                </ul>
+          </div>
+        </div>
+        <div class="row gy-4 text-center">
+          <div class="col-lg-3 col-sm-6">
+            <div class="service py-5 px-4 border">
+              <div class="service-icon">
+                <i class="ri-pencil-ruler-line"></i>
               </div>
-              <p class="text-card">
-                Experimental content creation feature that allows users to<br>add to an existing story over the course of a day without<br>spamming their friends.
+              <h5 class="mt-4">Branding</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                blanditiis necessitatibus inventore quis nisi architecto
+                consequatur similique fugit, quo eum magnam vitae facere fuga
+                nam esse aliquam animi omnis qui.
               </p>
-              <div class="skills-card-container">
-                <ul class="skills-card">
-                  <li class="skills">html</li>
-                  <li class="skills">Ruby on rails</li>
-                  <li class="skills">css</li>
-                  <li class="skills">javaScript</li>
-                </ul>
+              <a href="#" class="custom-link">
+                <span>Read More</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
             </div>
-              <button class="button-see" type="button">See Projects</button>
-            </div>
-          </section>
-          <section class="card">
-            <div class="block-image"><img src="image/card-3.png" alt="Missed Image" class="image-card"></div>
-            <div class="block-card">
-              <h2 class="header-card">Facebook 360</h2>
-              <div class="title-card-container">
-                <ul class="title-card">
-                  <li class="exclude-list">FACEBOOK</li>
-                  <li>Full Stack Dev</li>
-                  <li>2022</li>
-                </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service py-5 px-4 border">
+              <div class="service-icon">
+                <i class="ri-pen-nib-line"></i>
               </div>
-              <p class="text-card" >
-                Exploring the future of media in Facebook's first Virtual Reality<br>app; a place to discover and enjoy 360 photos and videos on<br>Gear VR..
+              <h5 class="mt-4">Graphic Design</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                blanditiis necessitatibus inventore quis nisi architecto
+                consequatur similique fugit, quo eum magnam vitae facere fuga
+                nam esse aliquam animi omnis qui.
               </p>
-              <div class="skills-card-container">
-                <ul class="skills-card">
-                  <li class="skills">html</li>
-                  <li class="skills">Ruby on rails</li>
-                  <li class="skills">css</li>
-                  <li class="skills">javaScript</li>
-                </ul>
-              </div>
-              <button class="button-see-alter" type="button">See Projects</button>
+              <a href="#" class="custom-link">
+                <span>Read More</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
             </div>
-          </section>
-          <section class="card">
-            <div class="block-image"><img src="image/card-4.png" alt="Missed Image" class="image-card"></div>
-            <div class="block-card reverse">
-              <h2 class="header-card">Uber Navigation</h2>
-              <div class="title-card-container">
-                <ul class="title-card">
-                  <li class="exclude-list">Uber</li>
-                  <li>Lead Developer</li>
-                  <li>2022</li>
-                </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service py-5 px-4 border">
+              <div class="service-icon">
+                <i class="ri-camera-3-line"></i>
               </div>
-              <p class="text-card" >
-                A smart assistant to make driving more safe, efficient, and fun<br>by unlocking your most expensive computer: your car.
+              <h5 class="mt-4">Photograph</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                blanditiis necessitatibus inventore quis nisi architecto
+                consequatur similique fugit, quo eum magnam vitae facere fuga
+                nam esse aliquam animi omnis qui.
               </p>
-              <div class="skills-card-container">
-                <ul class="skills-card">
-                  <li class="skills">html</li>
-                  <li class="skills">Ruby on rails</li>
-                  <li class="skills">css</li>
-                  <li class="skills">javaScript</li>
-                </ul>
+              <a href="#" class="custom-link">
+                <span>Read More</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
             </div>
-              <button class="button-see" type="button">See Projects</button>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service py-5 px-4 border">
+              <div class="service-icon">
+                <i class="ri-profile-line"></i>
+              </div>
+              <h5 class="mt-4">UI Design</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                blanditiis necessitatibus inventore quis nisi architecto
+                consequatur similique fugit, quo eum magnam vitae facere fuga
+                nam esse aliquam animi omnis qui.
+              </p>
+              <a href="#" class="custom-link">
+                <span>Read More</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
             </div>
-          </section>
-        </article>
-    <!-- About Start -->
-        <article id="about-content">
-          <section class="content-about-container">
-            <div class="block-left">
-              <h2 class="title-about">About<br>Myself</h2>
-              <p class="text-about"> Hello I’m a software developer! I can help you build a<br>product , feature or website Look through some of my<br>work and experience! If you like what you see and have<br>a project you need coded, don’t hestiate to contact me.</p>
-              <h4 class="text-social">LETS'S CONNECT</h4>
-              <ul class="icons-foot contacts-social">
-                <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a></lskill-otheri>
-              </ul>
-            <button class="resume-see" type="button">Get my resume</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="section-padding section-connector">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h1>My Work</h1>
+              <p>
+                I’m a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
+              </p>
+              <div class="line"></div>
             </div>
-            <div class="right-block">
-              <div class="lang-skills">
-                <p class="lang">Langguages</p>
-                <span class="material-icons icon-colors">expand_more</span>
+          </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/img/p-1.jpg" alt="" />
+              <div class="content">
+                <a
+                  href="./assets/img/p-1.jpg"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View project</a
+                >
               </div>
-              <div>
-                <img src="image/frames/js-frame.png" alt="Missed Image" class="img-skill">
-                <img src="image/frames/html-frame.png" alt="Missed Image" class="img-skill">
-                <img src="image/frames/css-frame.png" alt="Missed Image" class="img-skill">
-              </div>
-              <div class="lang-skills">
-              <p class="skill-other">Frameworks</p>
-              <span class="material-icons icon-colors">chevron_right</span>
-              </div>
-              <hr>
-                <div class="lang-skills">
-                  <p class="skill-other">Skills</p>
-                  <span class="material-icons colors-icon">chevron_right</span>
-              </div>
-              <hr>
             </div>
-          </section>
-        </article>
-    <!-- ABOUT end -->
-      </main>
-    <!-- form start -->
-      <footer>
-        <article class='container'>
-          <section id="contact">
-              <h1>Contact me</h1>
-              <p>If you have an application you are interested in<br>developing, a feature that you need built or a project<br>that needs coding. I’d love to help with it </p>
-              <form action="https://formspree.io/f/maykokoe" method="post" class="form-contacts">
-                  <input id="username" type="text" placeholder="Username" required name="username" maxlength=30>
-                  <input id="email" type="email" placeholder="E-mail" required name="email">
-                  <textarea name="text-form" id="text-form" cols="50" rows="6" placeholder="Write your message here" maxlength=500></textarea >
-                  <button class="get-it-touch" type="submit">Get It Touch</button>
-              </form>
-                <!-- form end -->
-            </section>
-        </article>
-      </footer>
-    </body>
-    </html>
-        
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/img/p-2.jpg" alt="" />
+              <div class="content">
+                <a
+                  href="./assets/img/p-2.jpg"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/img/p-3.jpg" alt="" />
+              <div class="content">
+                <a
+                  href="./assets/img/p-3.jpg"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/img/p-4.jpg" alt="" />
+              <div class="content">
+                <a
+                  href="./assets/img/p-4.jpg"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/img/p-5.jpg" alt="" />
+              <div class="content">
+                <a
+                  href="./assets/img/p-5.jpg"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="project">
+              <img src="./assets/img/p-6.jpg" alt="" />
+              <div class="content">
+                <a
+                  href="./assets/img/p-6.jpg"
+                  data-fancybox="gallery"
+                  class="btn btn-outline-light"
+                  >View project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-padding pb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title text-center">
+                <h1>Clients I've worked with</h1>
+                <p>
+                  I’m a software developer! I can help you build a product ,
+                  feature or website Look through some of my work and
+                  experience! If you like what you see and have a project you
+                  need coded, don’t hestiate to contact me.
+                </p>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-lg-3 col-sm-6">
+              <div class="client p-5 border">
+                <img src="/assets/img/logo01.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="client p-5 border">
+                <img src="/assets/img/logo02.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="client p-5 border">
+                <img src="/assets/img/logo03.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="client p-5 border">
+                <img src="/assets/img/logo04.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="client p-5 border">
+                <img src="/assets/img/logo05.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="client p-5 border">
+                <img src="/assets/img/logo06.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="client p-5 border">
+                <img src="/assets/img/logo07.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="client p-5 border">
+                <img src="/assets/img/logo08.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Resume" class="section-padding section-connector">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h1>Education & Experiance</h1>
+              <p>
+                I’m a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
+              </p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-5">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0">
+                  <h5>Kabul Univercity, MCS</h5>
+                  <small class="text-brand">2021 - onging</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0">
+                  <h5>Kabul Education Univercity, BCS</h5>
+                  <small class="text-brand">2008 - 2012</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0">
+                  <h5>Microverse, Software Development</h5>
+                  <small class="text-brand">2022 - Ongoing</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0">
+                  <h5>Cisco, CCNA</h5>
+                  <small class="text-brand">2019 - 2023</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0">
+                  <h5>AXELOS, ITIL 4</h5>
+                  <small class="text-brand">2020 - Life Time</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0 pb-0">
+                  <h5>British Council, IELTS</h5>
+                  <small class="text-brand">2022 - 2026</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0">
+                  <h5>Front End Developer, Freelencer</h5>
+                  <small class="text-brand">2022 - Present</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0">
+                  <h5>MOBY Afghanistan, IT Network Engineer</h5>
+                  <small class="text-brand">2021 - 2022</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0">
+                  <h5>MOBY Afghanistan, IT Support Engineer</h5>
+                  <small class="text-brand">2017 - 2021</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0">
+                  <h5>SGI, IT Support Engineer</h5>
+                  <small class="text-brand">2015 - 2017</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0">
+                  <h5>MCIT, IT Officer</h5>
+                  <small class="text-brand">2013 - 2015</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="eduexp p-5 pt-0 pb-0">
+                  <h5>Sunlight Electricity Services, IT Officer</h5>
+                  <small class="text-brand">2012 - 2013</small>
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
+                    mollitia eius, omnis voluptates voluptatibus reprehenderit
+                    vitae, recusandae similique nemo, molestiae odit in
+                    perferendis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Blog -->
+    <section id="blog" class="section-padding section-connector">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h1>Education & Experiance</h1>
+              <p>
+                I’m a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
+              </p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./assets/Js/app.js"></script>
+  </body>
+</html>
