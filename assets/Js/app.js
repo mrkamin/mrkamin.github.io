@@ -7,7 +7,7 @@ window.onscroll = function() {
 }
 
 AOS.init({
-    duration: 1000,
+    duration: 800,
 })
 ;
     
