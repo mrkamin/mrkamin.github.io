@@ -4,872 +4,365 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MRKA-Portfolio</MRKA-Portfolio></title>
-    <!-- CSS only  https://fancyapps.com/docs/ui/installation/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./design/css/style.css" />
+    <title>MRK Amin's Portfolio</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <!--Nav Bar-->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">MRK Amin.</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+  <body>
+    <header>
+      <nav>
+        <a class="logo-link" href="#">
+          <h2 class="logo">MRK Amin.</h2>
+        </a>
+        <ul id="mobile_navbar" class="desk-top-menu">
+          <li class="close-menu-btn" id="close-menu-btn">
+            <img src="./design/assets/closeBtn.svg" alt="close button" />
+          </li>
+          <li class="mob-nav-item"><a href="#works-container">Portfolio</a></li>
+          <li class="mob-nav-item"><a href="#about-container">About</a></li>
+          <li class="mob-nav-item"><a href="#contact-me">Contact</a></li>
+        </ul>
+        <a  id="toggle" class="burger-menu" href="#" 
+          ><img src="./design/assets/Union.svg" alt="collapsed menu"
+        /></a>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-container">
+        <h1 class="my-name">I’m Mohammad Rafi Amin Glad to see you!</h1>
+        <p class="my-description">
+          I’m a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
+        </p>
+        <ul class="project-used-techs">
+          <li>html</li>
+          <li>CSS</li>
+          <li>javascript</li>
+        </ul>
+      </section>
+      <section id="works-container">
+        <a href="#" class="project-card first-project">
+          <img
+            class="project-img mobile-img"
+            src="./design/assets/Snapshoot Portfolio desktop.png"
+            alt="Snapshoot for the project image"
+          />
+          <img
+            class="project-img desktop-img"
+            src="./design/assets/Snapshoot Portfolio desktop.png"
+            alt="Snapshoot for the project image"
+          />
+          <div class="works-content-container">
+            <h2 class="project-name">Tonic</h2>
+            <div class="project-details">
+              <h3>CANOPY</h3>
+              <img
+                src="./design/assets/Counter.svg"
+                alt="Decorative separator dot image"
+              />
+              <h3>Back End Dev</h3>
+              <img
+                src="./design/assets/Counter.svg"
+                alt="Decorative separator dot image"
+              />
+              <h3>2022</h3>
+            </div>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="project-used-techs">
+              <li>html</li>
+              <li>CSS</li>
+              <li>javascript</li>
+            </ul>
+            <button class="call-to-action-btns">See Projects</button>
+          </div>
+        </a>
+
+        <a href="#" class="project-card second-project">
+          <img
+            class="project-img mobile-img"
+            src="./design/assets/Snapshoot Portfolio.svg"
+            alt="Snapshoot for the project image"
+          />
+          <img
+            class="project-img desktop-img"
+            src="./design/assets/desktop-image-uber.png"
+            alt="Snapshoot for the project image"
+          />
+          <div class="works-content-container">
+            <h2 class="project-name">Multi-Post Stories</h2>
+            <div class="project-details">
+              <h3>CANOPY</h3>
+              <img
+                src="./design/assets/Counter.svg"
+                alt="Decorative separator dot image"
+              />
+              <h3>Back End Dev</h3>
+              <img
+                src="./design/assets/Counter.svg"
+                alt="Decorative separator dot image"
+              />
+              <h3>2022</h3>
+            </div>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="project-used-techs">
+              <li>html</li>
+              <li>CSS</li>
+              <li>javascript</li>
+            </ul>
+            <button class="call-to-action-btns">See Project</button>
+          </div>
+        </a>
+
+        <a href="#" class="project-card third-project">
+          <img
+            class="project-img mobile-img"
+            src="./design/assets/Snapshoot Portfolio-1.svg"
+            alt="Snapshoot for the project image"
+          />
+          <img
+            class="project-img desktop-img"
+            src="./design/assets/Snapshoot Portfolio.jpg"
+            alt="Snapshoot for the project image"
+          />
+          <div class="works-content-container">
+            <h2 class="project-name">Multi-Post Stories</h2>
+            <div class="project-details">
+              <h3>CANOPY</h3>
+              <img
+                src="./design/assets/Counter.svg"
+                alt="Decorative separator dot image"
+              />
+              <h3>Back End Dev</h3>
+              <img
+                src="./design/assets/Counter.svg"
+                alt="Decorative separator dot image"
+              />
+              <h3>2022</h3>
+            </div>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="project-used-techs">
+              <li>html</li>
+              <li>CSS</li>
+              <li>javascript</li>
+            </ul>
+            <button class="call-to-action-btns">See Project</button>
+          </div>
+        </a>
+
+        <a href="#" class="project-card forth-project">
+          <img
+            class="project-img mobile-img"
+            src="./design/assets/Snapshoot Portfolio.png"
+            alt="Snapshoot for the project image"
+          />
+          <img
+            class="project-img desktop-img"
+            src="./design/assets/multi-post-deksotp.png"
+            alt="Snapshoot for the project image"
+          />
+          <div class="works-content-container">
+            <h2 class="project-name">Multi-Post Stories</h2>
+            <div class="project-details">
+              <h3>CANOPY</h3>
+              <img
+                src="./design/assets/Counter.svg"
+                alt="Decorative separator dot image"
+              />
+              <h3>Back End Dev</h3>
+              <img
+                src="./design/assets/Counter.svg"
+                alt="Decorative separator dot image"
+              />
+              <h3>2022</h3>
+            </div>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="project-used-techs">
+              <li>html</li>
+              <li>CSS</li>
+              <li>javascript</li>
+            </ul>
+            <button class="call-to-action-btns">See Project</button>
+          </div>
+        </a>
+      </section>
+      <section id="about-container">
+        <div class="about-call-to-action">
+          <h2 class="my-name">About Myself</h2>
+          <p class="my-description">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <a class="my-email-link" href=#contact-me>LET’S CONNECT</a>
+          <ul class="about-my-social">
+            <li>
+              <a href="https://github.com/mrkamin"
+                ><img
+                  src="./design/assets/git.svg"
+                  alt="MRK Amin's github profile"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/mohammad-rafi-amin-63b4319b/"
+                ><img
+                  src="./design/assets/Linkedin-icon.svg"
+                  alt="MRK Amin's Linkedin profile"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./design/assets/awards.svg"
+                  alt="MRK Amin's Awards profile"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Mohamma63974237"
+                ><img
+                  src="./design/assets/twitter.svg"
+                  alt="MRK Amin's twitter profile"
+              /></a>
+            </li>
+
+            <li>
+              <a href="#"
+                ><img
+                  src="./design/assets/meduim.svg"
+                  alt="MRK Amin's Medium profile"
+              /></a>
+            </li>
+          </ul>
+
+          <a class="call-to-action-btns about-btn" href="#">Get my resume</a>
+        </div>
+        <ul class="about-skills">
+          <li class="slide active">
+            <div class="slide-header">
+              <h4>Languages</h4>
+              <img
+                class="arrow"
+                src="./design/assets/arrow.svg"
+                alt="Reveal more arrow"
+              />
+            </div>
+            <ul class="slide-content">
+              <li>
+                <img
+                  src="./design/assets/javascript.svg"
+                  alt="Javascript logo"
+                />
+                <h6>JavaScript</h6>
+              </li>
+              <li>
+                <img src="./design/assets/html.svg" alt="HTML logo" />
+                <h6>HTML</h6>
+              </li>
+              <li>
+                <img src="./design/assets/css.svg" alt="CSS logo" />
+                <h6>CSS</h6>
+              </li>
+            </ul>
+          </li>
+          <li class="slide">
+            <div class="slide-header">
+              <h4>Frameworks</h4>
+              <img
+                class="arrow"
+                src="./design/assets/arrow.svg"
+                alt="Reveal more arrow"
+              />
+            </div>
+          </li>
+          <li class="slide">
+            <div class="slide-header">
+              <h4>Skills</h4>
+              <img
+                class="arrow"
+                src="./design/assets/arrow.svg"
+                alt="Reveal more arrow"
+              />
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="contact-me" class="section-contact">
+      <div class="form-container">
+        <h2>Contact me</h2>
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/maykokoe"
+          method="POST"
+          aria-placeholder="First and second name"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+          <div class="input-control">
+            <label for="input-name" class="label" id="input-name-label"
+              >Name</label
+            >
+            <input
+              id="input-name"
+              type="text"
+              maxlength="30"
+              placeholder="Your Name"
+              required
+            />
+          </div>
 
-          <!-- https://remixicon.com/ -->
-          
-          <ul class="navbar-nav flex-row">
-            <li class="nav-item">
-              <a class="social-icon" href="https://github.com/mrkamin"
-                ><i class="ri-github-line"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="social-icon"
-                href="https://www.instagram.com/rafikambiz/"
-                ><i class="ri-instagram-line"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="social-icon"
-                href="https://www.facebook.com/profile.php?id=100064317682546"
-                ><i class="ri-facebook-line"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="social-icon"
-                href="https://www.youtube.com/channel/UCnNGRwjg9TrN8kEWggQhS-g"
-                ><i class="ri-youtube-line"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="social-icon"
-                href="https://www.linkedin.com/in/mohammad-rafi-amin-63b4319b/"
-                ><i class="ri-linkedin-line"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="social-icon" href="https://twitter.com/Mohamma63974237"
-                ><i class="ri-twitter-line"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+          <div class="input-control">
+            <label for="user-email" class="label" id="input-email-label"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="user-email"
+              placeholder="ex-simple@example.com"
+              required
+            />
+          </div>
+          <div class="input-control">
+            <label for="user-message" class="label" id="input-message-label"
+              >Message</label
+            >
+            <textarea
+              name="message"
+              id="user-message"
+              cols="30"
+              rows="10"
+              placeholder="Write your message here"
+              maxlength="500"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Get In Touch</button>
+        </form>
       </div>
-    </nav>
-    <!-- Home -->
-    <section id="home" class="d-flex align-items-center min-vh-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="display-1 fw-bold" data-aos="fade-up">Hi there! I'm</h1>
-            <h1 class="display-5 fw-bold" data-aos="fade-up">
-              <span class="text-brand">Mohamamd Rafi Amin.</span>
-            </h1>
-            <h4 data-aos="fade-up" data-aos-delay="100" class="mt-3 mb-5">
-              Mars based web designer and developer
-            </h4>
-            <div data-aos="fade-up" data-aos-delay="200">
-              <a href="#contact" class="btn btn-brand">Get Connected</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services" class="section-padding section-connector">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="section-title text-center"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <h1>Services</h1>
-              <p>
-                I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.
-              </p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-4 text-center">
-          <div
-            class="col-lg-3 col-sm-6"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="service py-5 px-4 border">
-              <div class="service-icon">
-                <i class="ri-pencil-ruler-line"></i>
-              </div>
-              <h5 class="mt-4">Branding</h5>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
-                blanditiis necessitatibus inventore quis nisi architecto
-                consequatur similique fugit, quo eum magnam vitae facere fuga
-                nam esse aliquam animi omnis qui.
-              </p>
-              <a href="#" class="custom-link">
-                <span>Read More</span>
-                <i class="ri-arrow-right-line"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-sm-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="service py-5 px-4 border">
-              <div class="service-icon">
-                <i class="ri-pen-nib-line"></i>
-              </div>
-              <h5 class="mt-4">Graphic Design</h5>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
-                blanditiis necessitatibus inventore quis nisi architecto
-                consequatur similique fugit, quo eum magnam vitae facere fuga
-                nam esse aliquam animi omnis qui.
-              </p>
-              <a href="#" class="custom-link">
-                <span>Read More</span>
-                <i class="ri-arrow-right-line"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-sm-6"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="service py-5 px-4 border">
-              <div class="service-icon">
-                <i class="ri-camera-3-line"></i>
-              </div>
-              <h5 class="mt-4">Photograph</h5>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
-                blanditiis necessitatibus inventore quis nisi architecto
-                consequatur similique fugit, quo eum magnam vitae facere fuga
-                nam esse aliquam animi omnis qui.
-              </p>
-              <a href="#" class="custom-link">
-                <span>Read More</span>
-                <i class="ri-arrow-right-line"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-sm-6"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="service py-5 px-4 border">
-              <div class="service-icon">
-                <i class="ri-profile-line"></i>
-              </div>
-              <h5 class="mt-4">UI Design</h5>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
-                blanditiis necessitatibus inventore quis nisi architecto
-                consequatur similique fugit, quo eum magnam vitae facere fuga
-                nam esse aliquam animi omnis qui.
-              </p>
-              <a href="#" class="custom-link">
-                <span>Read More</span>
-                <i class="ri-arrow-right-line"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="work" class="section-padding section-connector">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-            <div class="section-title text-center">
-              <h1>My Work</h1>
-              <p>
-                I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.
-              </p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row g-2">
-          <div
-            class="col-lg-4 col-sm-6"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="project">
-              <img src="./assets/img/p-1.jpg" alt="" />
-              <div class="content">
-                <a
-                  href="./assets/img/p-1.jpg"
-                  data-fancybox="gallery"
-                  class="btn btn-outline-light"
-                  >View project</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-sm-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="project">
-              <img src="./assets/img/p-2.jpg" alt="" />
-              <div class="content">
-                <a
-                  href="./assets/img/p-2.jpg"
-                  data-fancybox="gallery"
-                  class="btn btn-outline-light"
-                  >View project</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-sm-6"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="project">
-              <img src="./assets/img/p-3.jpg" alt="" />
-              <div class="content">
-                <a
-                  href="./assets/img/p-3.jpg"
-                  data-fancybox="gallery"
-                  class="btn btn-outline-light"
-                  >View project</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-sm-6"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="project">
-              <img src="./assets/img/p-4.jpg" alt="" />
-              <div class="content">
-                <a
-                  href="./assets/img/p-4.jpg"
-                  data-fancybox="gallery"
-                  class="btn btn-outline-light"
-                  >View project</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-sm-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="project">
-              <img src="./assets/img/p-5.jpg" alt="" />
-              <div class="content">
-                <a
-                  href="./assets/img/p-5.jpg"
-                  data-fancybox="gallery"
-                  class="btn btn-outline-light"
-                  >View project</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-sm-6"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="project">
-              <img src="./assets/img/p-6.jpg" alt="" />
-              <div class="content">
-                <a
-                  href="./assets/img/p-6.jpg"
-                  data-fancybox="gallery"
-                  class="btn btn-outline-light"
-                  >View project</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-padding pb-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="section-title text-center">
-                <h1>Clients I've worked with</h1>
-                <p>
-                  I’m a software developer! I can help you build a product ,
-                  feature or website Look through some of my work and
-                  experience! If you like what you see and have a project you
-                  need coded, don’t hestiate to contact me.
-                </p>
-                <div class="line"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row g-0">
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="client p-5 border">
-                <img src="/assets/img/logo01.svg" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="client p-5 border">
-                <img src="/assets/img/logo02.svg" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="client p-5 border">
-                <img src="/assets/img/logo03.svg" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="client p-5 border">
-                <img src="/assets/img/logo04.svg" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="client p-5 border">
-                <img src="/assets/img/logo05.svg" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="client p-5 border">
-                <img src="/assets/img/logo06.svg" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="client p-5 border">
-                <img src="/assets/img/logo07.svg" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-sm-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="client p-5 border">
-                <img src="/assets/img/logo08.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="resume" class="section-padding section-connector">
-      <div class="container">
-        <div class="row">
-          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-            <div class="section-title text-center">
-              <h1>Education & Experiance</h1>
-              <p>
-                I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.
-              </p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-5">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-                <div class="eduexp p-5 pt-0">
-                  <h5>Kabul Univercity, MCS</h5>
-                  <small class="text-brand">2021 - onging</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12" data-aos="fade-up" data-aos-delay="200">
-                <div class="eduexp p-5 pt-0">
-                  <h5>Kabul Education Univercity, BCS</h5>
-                  <small class="text-brand">2008 - 2012</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-                <div class="eduexp p-5 pt-0">
-                  <h5>Microverse, Software Development</h5>
-                  <small class="text-brand">2022 - Ongoing</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12" data-aos="fade-up" data-aos-delay="400">
-                <div class="eduexp p-5 pt-0">
-                  <h5>Cisco, CCNA</h5>
-                  <small class="text-brand">2019 - 2023</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12" data-aos="fade-up" data-aos-delay="500">
-                <div class="eduexp p-5 pt-0">
-                  <h5>AXELOS, ITIL 4</h5>
-                  <small class="text-brand">2020 - Life Time</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                <div class="eduexp p-5 pt-0 pb-0">
-                  <h5>British Council, IELTS</h5>
-                  <small class="text-brand">2022 - 2026</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-                <div class="eduexp p-5 pt-0">
-                  <h5>Front End Developer, Freelencer</h5>
-                  <small class="text-brand">2022 - Present</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12" data-aos="fade-up" data-aos-delay="200">
-                <div class="eduexp p-5 pt-0">
-                  <h5>MOBY Afghanistan, IT Network Engineer</h5>
-                  <small class="text-brand">2021 - 2022</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-                <div class="eduexp p-5 pt-0">
-                  <h5>MOBY Afghanistan, IT Support Engineer</h5>
-                  <small class="text-brand">2017 - 2021</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12" data-aos="fade-up" data-aos-delay="400">
-                <div class="eduexp p-5 pt-0">
-                  <h5>SGI, IT Support Engineer</h5>
-                  <small class="text-brand">2015 - 2017</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12" data-aos="fade-up" data-aos-delay="500">
-                <div class="eduexp p-5 pt-0">
-                  <h5>MCIT, IT Officer</h5>
-                  <small class="text-brand">2013 - 2015</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                <div class="eduexp p-5 pt-0 pb-0">
-                  <h5>Sunlight Electricity Services, IT Officer</h5>
-                  <small class="text-brand">2012 - 2013</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore quod odit libero, iusto eveniet aliquid? Rerum
-                    mollitia eius, omnis voluptates voluptatibus reprehenderit
-                    vitae, recusandae similique nemo, molestiae odit in
-                    perferendis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Blog -->
-    <section id="blog" class="section-padding section-connector">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="section-title text-center"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <h1>Blog</h1>
-              <p>
-                I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.
-              </p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-5">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="bp">
-              <img src="/assets/img/blog-post1.jpg" alt="" />
-              <div class="bp-content pt-4">
-                <h4>Websit Design</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officiis alias quos veritatis aliquam nobis nisi beatae odit
-                  excepturi? Rem totam laboriosam nam voluptas, fuga assumenda
-                  earum magni in sint tenetur.
-                </p>
-                <a href="#" class="custom-link">
-                  <span>Reed More</span>
-                  <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="bp">
-              <img src="/assets/img/blog-post2.jpg" alt="" />
-              <div class="bp-content pt-4">
-                <h4>Websit Design</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officiis alias quos veritatis aliquam nobis nisi beatae odit
-                  excepturi? Rem totam laboriosam nam voluptas, fuga assumenda
-                  earum magni in sint tenetur.
-                </p>
-                <a href="#" class="custom-link">
-                  <span>Reed More</span>
-                  <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="bp">
-              <img src="/assets/img/blog-post3.jpg" alt="" />
-              <div class="bp-content pt-4">
-                <h4>Websit Design</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officiis alias quos veritatis aliquam nobis nisi beatae odit
-                  excepturi? Rem totam laboriosam nam voluptas, fuga assumenda
-                  earum magni in sint tenetur.
-                </p>
-                <a href="#" class="custom-link">
-                  <span>Reed More</span>
-                  <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact" class="section-connector">
-      <div class="container section-padding">
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="section-title text-center"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <h1>Contact</h1>
-              <p>
-                I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.
-              </p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8" data-aos="fade-up" data-aos-delay="200">
-            <form action="https://formspree.io/f/maykokoe" method="post" class="row g-3">
-              <div class="form-group col-md-4">
-                <input type="text" class="form-control" placeholder="Name" required name="name" maxlength="30">
-              </div>
-              <div class="form-group col-md-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Phone Number" 
-                />
-              </div>
-              <div class="form-group col-md-4">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Email Address" required name="email"
-                />
-              </div>
-              <div class="form-group col-md-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Subject" required name="text"
-                />
-              </div>
-              <div class="form-group col-md-12">
-                <textarea
-                  name=""
-                  class="form-control"
-                  placeholder="Enter Your Message"
-                  rows="4"
-                ></textarea>
-              </div>
-              <div class="form-group text-center col-md-12">
-                <button class="btn btn-brand" type="submit">Send Message</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div class="footer-top">
-          <div class="container">
-            <div class="row gy-5">
-              <div class="col-md-4">
-                <h4><a href="#" class="text-white">MRK Amin</a></h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
-                  eum nihil assumenda est quasi impedit quas praesentium
-                  voluptatibus, optio libero, repellat, officia magnam expedita
-                  itaque nam aut doloremque dolor excepturi!
-                </p>
-                <ul class="navbar-nav flex-row">
-                  <li class="nav-item">
-                    <a class="social-icon" href="https://github.com/mrkamin"
-                      ><i class="ri-github-line"></i
-                    ></a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="social-icon"
-                      href="https://www.instagram.com/rafikambiz/"
-                      ><i class="ri-instagram-line"></i
-                    ></a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="social-icon"
-                      href="https://www.youtube.com/channel/UCnNGRwjg9TrN8kEWggQhS-g"
-                      ><i class="ri-youtube-line"></i
-                    ></a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="social-icon"
-                      href="https://www.linkedin.com/in/mohammad-rafi-amin-63b4319b/"
-                      ><i class="ri-linkedin-line"></i
-                    ></a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="social-icon"
-                      href="https://twitter.com/Mohamma63974237"
-                      ><i class="ri-twitter-line"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-3 ms-auto">
-                <h4>Quick Links</h4>
-                <ul>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#blog">Blog</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h4>Contact</h4>
-                <ul>
-                  <li>Email: mrkamin2@gmail.com</li>
-                  <li>Whatsup: +93797578699</li>
-                  <li>Address: Kabul Afghanistan</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="row justify-content-between">
-              <div class="col-auto">
-                <p class="mb-0">Copyright text goes here</p>
-              </div>
-              <div class="col-auto">
-                <p class="mb-0">
-                  Template designed by <a href="#">MRK Amin</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </section>
-
-    <!-- JavaScript Bundle with Popper  https://fancyapps.com/docs/ui/installation/ https://github.com/Remix-Design/remixicon#usage -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script src="./assets/Js/app.js"></script>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
