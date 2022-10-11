@@ -6,6 +6,8 @@ window.onscroll = function() {
     }
 }
 
+//https://michalsnik.github.io/aos/
+
 AOS.init({
     duration: 800,
 })
