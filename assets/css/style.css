@@ -95,6 +95,26 @@ img {
   transition: var(--transition);
 }
 
+.navbar-brand {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: var(--transition);
+  animation: rotateLogo 1.5s linear;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container >a:hover {
+  font-size: 30px;
+}
+
 .navbar.scrolled {
     padding-top: 7px;
     padding-bottom: 7px;
@@ -174,9 +194,11 @@ img {
 /* Home */
 
 #home {
-    background-image: url(../img/hom-bg-transparant.png);
-    background-position: center;
+    background-image: url(../img/MyPic1.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    
 }
 
 /* service */
