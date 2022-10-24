@@ -96,8 +96,6 @@ img {
 }
 
 .navbar-brand {
-  padding-top: 30px;
-  padding-bottom: 30px;
   transition: var(--transition);
   animation: rotateLogo 1.5s linear;
 }
