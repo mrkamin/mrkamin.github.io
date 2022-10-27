@@ -4,10 +4,10 @@
 /* colors */
 
 :root {
-    --c-brand: #f83691;
+    --c-brand: #020108;
     --c-brand-rgb: 248, 54, 145;
-    --c-dark: #303050;
-    --c-body: #636383;
+    --c-dark: #219993;
+    --c-body: #2e2e6d;
     --c-light: #f6f6f6;
     --f-main: "Bai Jamjuree", sans-serif;
     --transition: all .4s cubic-bezier(.165, .84, .44, 1);
@@ -109,13 +109,13 @@ img {
   }
 }
 
-.container >a:hover {
+.container > a:hover {
   font-size: 30px;
 }
 
 .navbar.scrolled {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-color: white;
     box-shadow: var(--shadow);
 }
@@ -292,7 +292,7 @@ img {
     content: '';
     height: 100%;
     width: 1px;
-    background-color: rgba(var(--c-brand-rgb), 0.4);
+    background-color: var(--c-brand);
     position: absolute;
     left: 0;
     top: 0;
